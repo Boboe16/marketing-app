@@ -37,7 +37,6 @@ const Scene = () => {
         style={{ width: '100%', height: '500px'}}
         camera={{ position: [3, 2, 5], fov: 30 }}
         gl={{
-          physicallyCorrectLights: true,
           antialias: true,
           toneMappingExposure: 2.2,
           preserveDrawingBuffer: true // Prevents automatic resizing
