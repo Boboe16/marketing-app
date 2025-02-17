@@ -39,7 +39,6 @@ const Scene = () => {
         gl={{
           antialias: true,
           toneMappingExposure: 2.2,
-          preserveDrawingBuffer: true // Prevents automatic resizing
         }}
       >
         {/* Ambient Light for soft global illumination */}
