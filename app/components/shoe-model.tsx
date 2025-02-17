@@ -33,8 +33,6 @@ function Model() {
 const Scene = () => {
   return (
       <Canvas
-        className=''
-        gl={{ preserveDrawingBuffer: true }} // Prevents automatic resizing
         shadows={{ type: PCFSoftShadowMap }}
         style={{ width: '100%', height: '500px'}}
         camera={{ position: [3, 2, 5], fov: 30 }}
@@ -42,6 +40,7 @@ const Scene = () => {
           physicallyCorrectLights: true,
           antialias: true,
           toneMappingExposure: 2.2,
+          preserveDrawingBuffer: true // Prevents automatic resizing
         }}
       >
         {/* Ambient Light for soft global illumination */}
